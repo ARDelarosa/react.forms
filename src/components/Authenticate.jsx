@@ -41,7 +41,7 @@ function Authenticate({ token }) {
 
   return (
     <div>
-      <h2>Authenticate Component</h2>
+      <h3>Authenticate Component</h3>
       <button onClick={handleAuthenticate}>Authenticate Token</button>
       {authError && <p>Error: {authError}</p>}
       {successMessage && <p>Success: {successMessage}</p>}

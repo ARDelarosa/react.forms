@@ -48,7 +48,7 @@ function SignUpForm({setToken}) {
     
     return (
         <>
-            <h2>Sign Up!</h2>;
+            <h2>Sign Up!</h2>
             <form onSubmit={handleSubmit}>
                 <label>
                     Username:
@@ -64,7 +64,9 @@ function SignUpForm({setToken}) {
                     onChange={(e) => setPassword(e.target.value)} 
                     />
                 </label>
+                <p>
                 <button>Submit</button>
+                </p>
             </form>
             {validationError && <p>{validationError}</p>}
             {error && <p> Error: {error}</p>}
